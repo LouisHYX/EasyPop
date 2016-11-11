@@ -126,7 +126,6 @@
                 break;
         }
 
-        // [doc.documentElement.clientWidth, doc.documentElement.clientHeight];  //当前页面宽高
         var currentPop = null;  //当前弹窗主体
         var mask = null;  //背景蒙层
         var moveBox = null;  //弹窗可拖拽区域
@@ -230,7 +229,7 @@
 
                 /*执行插件回调*/
                 if (me.config.callback && typeof me.config.callback === "function") {
-                    me.config.callback(me);
+                    me.config.callback();
                 }
 
                 instance = null;  //删除插件实例
